@@ -1,0 +1,507 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffetch | Coffee Classification</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="classification">
+    <!-- 部件间距：Header内边距由 .site-header 的 padding 控制 -->
+    <header class="site-header">
+      <a class="brand-link" href="index.html">
+        <img src="assets/logo.png" alt="Coffetch" class="brand-logo" />
+      </a>
+      <nav class="main-nav">
+        <!-- 间距：导航链接间距由 .main-nav a 的 margin 或 gap 控制 -->
+        <a href="index.html"><span>主页</span><strong>Home</strong></a>
+        <a href="classification.html" class="active"
+          ><span>品类</span><strong>Types</strong></a
+        >
+        <a href="caffeine.html"><span>咖啡因</span><strong>Caffeine</strong></a>
+        <a href="flavor.html"><span>风味</span><strong>Flavor</strong></a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 页面首屏：上下间距由 .page-hero 的 padding 控制 -->
+      <section class="page-hero compact classification-hero">
+        <!-- 布局间距：.archive-hero-spread 内部使用 Grid 间距 (gap) -->
+        <div class="archive-hero-spread">
+          <!-- 装饰图间距：由 Grid 区域定位或 margin 决定 -->
+          <div class="archive-left-stack">
+            <p class="archive-cup-caption">每一杯咖啡都拥有属于自己的档案。</p>
+            <figure class="archive-cup-photo">
+              <img src="assets/archive-iced-cup.png" alt="Cup" />
+            </figure>
+            <div class="archive-bottom-copy">
+              <p>
+                咖啡的差异不仅来自咖啡豆本身，更源于不同的萃取方式。
+                不同的水温、时间与压力共同塑造了一杯咖啡的个性。
+              </p>
+            </div>
+          </div>
+          <figure class="archive-foam-photo">
+            <img src="assets/archive-foam.png" alt="Foam" />
+          </figure>
+          <h1 class="archive-label">
+            <span class="hero-reveal-title">咖啡分类档案</span>
+            <span class="archive-label-en">COFFEE CLASSIFICATION ARCHIVE</span>
+          </h1>
+          <nav
+            class="hero-section-nav archive-hero-nav"
+            aria-label="品类页面目录"
+          >
+            <a href="#extraction-archive">萃取档案</a>
+            <a href="#espresso-archive">意式档案</a>
+            <a href="#hand-brew-archive">手冲档案</a>
+          </nav>
+        </div>
+      </section>
+
+      <section
+        class="extraction-methods-hero"
+        id="extraction-archive"
+        aria-label="四种萃取方式"
+      >
+        <div class="extraction-methods-title">
+          <p>FOUR EXTRACTION METHODS</p>
+          <h2>常见萃取方式</h2>
+        </div>
+        <div class="extraction-methods-cards">
+          <figure
+            class="extraction-method-card card-espresso"
+            role="button"
+            tabindex="0"
+            data-extraction-method="espresso"
+          >
+            <img src="assets/Espresso.jpg" alt="" />
+            <figcaption>
+              <span>Espresso</span>
+              <strong>意式浓缩</strong>
+            </figcaption>
+            <div class="extraction-method-card-detail">
+              <p class="method-en">Espresso</p>
+              <h3>意式浓缩</h3>
+              <p class="method-subtitle">高压 · 浓缩 · 经典基底</p>
+              <p class="method-copy">
+                通过约 9 bar
+                高压快速萃取咖啡液，风味集中、醇厚度高，是美式、拿铁、澳白与卡布奇诺等意式咖啡的基础。
+              </p>
+              <p class="method-tags">浓郁｜油脂｜醇厚｜高强度</p>
+            </div>
+          </figure>
+          <figure
+            class="extraction-method-card card-pour-over"
+            role="button"
+            tabindex="0"
+            data-extraction-method="pourOver"
+          >
+            <img src="assets/Pour Over.jpg" alt="" />
+            <figcaption>
+              <span>Hand Drip</span>
+              <strong>手冲咖啡</strong>
+            </figcaption>
+            <div class="extraction-method-card-detail">
+              <p class="method-en">Hand Drip</p>
+              <h3>手冲咖啡</h3>
+              <p class="method-subtitle">过滤 · 控制 · 风味探索</p>
+              <p class="method-copy">
+                利用滤纸或滤杯控制水流与萃取过程，能够清晰呈现咖啡豆本身的产地特征与风味层次，是精品咖啡中最常见的冲煮方式之一。
+              </p>
+              <p class="method-tags">干净｜层次｜花果香｜风味表达</p>
+            </div>
+          </figure>
+          <figure
+            class="extraction-method-card card-ice-drip"
+            role="button"
+            tabindex="0"
+            data-extraction-method="iceDrip"
+          >
+            <img src="assets/Ice Drip.jpg" alt="" />
+            <figcaption>
+              <span>Ice Drip</span>
+              <strong>冰滴咖啡</strong>
+            </figcaption>
+            <div class="extraction-method-card-detail">
+              <p class="method-en">Ice Drip</p>
+              <h3>冰滴咖啡</h3>
+              <p class="method-subtitle">慢速滴滤 · 高香气表现</p>
+              <p class="method-copy">
+                通过冰水缓慢滴滤萃取，整个过程可持续数小时。相比冷萃，冰滴通常拥有更明亮的香气与更丰富的层次变化。
+              </p>
+              <p class="method-tags">香气突出｜层次丰富｜轻盈｜细腻</p>
+            </div>
+          </figure>
+          <figure
+            class="extraction-method-card card-cold-brew"
+            role="button"
+            tabindex="0"
+            data-extraction-method="coldBrew"
+          >
+            <img src="assets/Cold Brew.jpg" alt="" />
+            <figcaption>
+              <span>Cold Brew</span>
+              <strong>冷萃咖啡</strong>
+            </figcaption>
+            <div class="extraction-method-card-detail">
+              <p class="method-en">Cold Brew</p>
+              <h3>冷萃咖啡</h3>
+              <p class="method-subtitle">低温 · 长时 · 顺滑口感</p>
+              <p class="method-copy">
+                使用冷水长时间浸泡咖啡粉，通常需要 8-24
+                小时完成萃取。酸度较低，口感柔和顺滑，适合夏季饮用。
+              </p>
+              <p class="method-tags">低酸｜顺滑｜清爽｜甜感</p>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 意式区：.espresso-section 的 margin-top 控制与首屏的距离 -->
+      <section class="espresso-section" id="espresso-archive">
+        <div class="section-heading espresso-heading">
+          <div class="espresso-title-stage">
+            <!-- 左右布局间距：.espresso-heading 的 gap 控制文字与右侧图片的距离 -->
+            <div class="espresso-heading-copy">
+              <p class="section-kicker">ESPRESSO BASED</p>
+              <h2>意式咖啡配比档案</h2>
+              <p class="espresso-heading-description">
+                以意式浓缩为起点，通过水、牛奶与奶泡比例的细微变化，<br />
+                衍生出一系列风味、口感与个性各异的经典咖啡。
+              </p>
+            </div>
+            <div class="espresso-heading-visual">
+              <img src="assets/espresso-machine-pour.jpg" alt="Pouring" />
+              <!-- 图例间距：.espresso-legend div 的 margin 控制各行间距 -->
+              <dl class="espresso-legend">
+                <div>
+                  <dt><span class="legend-swatch espresso"></span>Espresso</dt>
+                </div>
+                <div>
+                  <dt><span class="legend-swatch water"></span>Water</dt>
+                </div>
+                <div>
+                  <dt><span class="legend-swatch milk"></span>Steamed Milk</dt>
+                </div>
+                <div>
+                  <dt><span class="legend-swatch foam"></span>Milk Foam</dt>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <!-- 意式卡片堆叠卡组：.espresso-card-gallery 控制整体翻找区域 -->
+        <div
+          class="espresso-card-gallery"
+          tabindex="0"
+          aria-label="意式咖啡卡片堆叠浏览"
+        >
+          <!-- 卡片内边距：由 .espresso-type-card 的 padding 控制 -->
+          <article class="espresso-type-card card-blue">
+            <h3>Espresso</h3>
+            <span class="espresso-script-title">浓缩咖啡</span>
+            <div class="espresso-visual-row">
+              <img
+                src="assets/cup-espresso.png"
+                alt="Espresso"
+                class="cup-art"
+              />
+            </div>
+            <!-- 比例图：.layer 的 height 属性通过 CSS height 控制 -->
+            <div class="cup-diagram">
+              <span class="layer espresso" style="height: 34%">Espresso</span>
+            </div>
+            <p>意式咖啡的核心形态。高压萃取出的少量咖啡液。</p>
+          </article>
+
+          <article class="espresso-type-card card-nut">
+            <h3>Americano</h3>
+            <span class="espresso-script-title">美式咖啡</span>
+            <div class="espresso-visual-row">
+              <img
+                src="assets/cup-americano.png"
+                alt="Americano"
+                class="cup-art"
+              />
+            </div>
+            <div class="cup-diagram">
+              <span class="layer water" style="height: 56%">Water</span>
+              <span class="layer espresso" style="height: 28%">Espresso</span>
+            </div>
+            <p>由浓缩咖啡加入热水制成，保留香气的同时降低浓度。</p>
+          </article>
+
+          <article class="espresso-type-card card-oat">
+            <h3>Latte</h3>
+            <span class="espresso-script-title">拿铁</span>
+            <div class="espresso-visual-row">
+              <img src="assets/cup-latte.png" alt="Latte" class="cup-art" />
+            </div>
+            <div class="cup-diagram">
+              <span class="layer foam" style="height: 18%">Milk Foam</span>
+              <span class="layer milk" style="height: 44%">Steamed Milk</span>
+              <span class="layer espresso" style="height: 28%">Espresso</span>
+            </div>
+            <p>浓缩咖啡与大量热牛奶混合而成，奶香柔和顺滑。</p>
+          </article>
+
+          <!-- 重复结构卡片 (Cappuccino, Cortado, Flat White) 保持类名一致 -->
+          <article class="espresso-type-card card-blue">
+            <h3>Cappuccino</h3>
+            <span class="espresso-script-title">卡布奇诺</span>
+            <div class="espresso-visual-row">
+              <img
+                src="assets/cup-cappuccino.png"
+                alt="Cappuccino"
+                class="cup-art"
+              />
+            </div>
+            <div class="cup-diagram">
+              <span class="layer foam" style="height: 30%">Milk Foam</span>
+              <span class="layer milk" style="height: 30%">Steamed Milk</span>
+              <span class="layer espresso" style="height: 30%">Espresso</span>
+            </div>
+            <p>浓缩、热牛奶与厚奶泡构成，三者比例接近。</p>
+          </article>
+
+          <article class="espresso-type-card card-espresso">
+            <h3>Cortado</h3>
+            <span class="espresso-script-title">可塔朵</span>
+            <div class="espresso-visual-row">
+              <img src="assets/cup-cortado.png" alt="Cortado" class="cup-art" />
+            </div>
+            <div class="cup-diagram">
+              <span class="layer milk" style="height: 34%">Warm Milk</span>
+              <span class="layer espresso" style="height: 38%">Espresso</span>
+            </div>
+            <p>浓缩与等量热牛奶组成，口感直接而纯粹。</p>
+          </article>
+
+          <article class="espresso-type-card card-nut">
+            <h3>Flat White</h3>
+            <span class="espresso-script-title">澳白</span>
+            <div class="espresso-visual-row">
+              <img
+                src="assets/cup-flat-white.png"
+                alt="Flat White"
+                class="cup-art"
+              />
+            </div>
+            <div class="cup-diagram">
+              <span class="layer foam" style="height: 16%">Milk Foam</span>
+              <span class="layer milk" style="height: 38%">Milk</span>
+              <span class="layer espresso" style="height: 30%">Coffee</span>
+            </div>
+            <p>牛奶更少、浓缩比例更高，奶泡更细腻。</p>
+          </article>
+        </div>
+        <div class="espresso-carousel-controls" aria-label="意式咖啡卡片控制">
+          <button
+            class="espresso-carousel-button"
+            type="button"
+            data-espresso-prev
+            aria-label="上一张意式咖啡卡片"
+          >
+            &larr;
+          </button>
+          <span class="espresso-carousel-status" id="espressoCarouselStatus"
+            >1 / 6</span
+          >
+          <button
+            class="espresso-carousel-button"
+            type="button"
+            data-espresso-next
+            aria-label="下一张意式咖啡卡片"
+          >
+            &rarr;
+          </button>
+        </div>
+      </section>
+
+      <!-- 手冲介绍区：.brew-section 的 padding 或 margin-top 控制 -->
+      <section class="brew-section" id="hand-brew-archive">
+        <div class="brew-title-stage">
+          <div class="brew-visual">
+            <div class="brew-photo-frame">
+              <img src="assets/pourover.png" alt="Brewing" class="brew-photo" />
+            </div>
+            <div class="embossed-word">drip</div>
+          </div>
+          <div class="brew-content">
+            <p class="section-kicker">HAND BREW</p>
+            <h2>手冲咖啡器具参数</h2>
+            <p>
+              手冲咖啡是一种通过人工控制水流、时间与萃取节奏完成冲煮的方式。
+              <br />同样的咖啡豆，在不同器具中可能呈现完全不同的风味。
+              <br />不同器具也要求不同的粉水比、研磨度、水温和时间。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 手冲卡片左右分组：.brew-method-group 控制每组三张卡片的堆叠 -->
+      <section class="brew-methods">
+        <div class="brew-method-group">
+          <!-- 单个卡片内部间距：.method-card 的 padding，及其内部 dl div 的 margin-bottom -->
+          <article class="method-card">
+            <h3>
+              <span>Coffee Dripper</span
+              ><span class="method-name-cn">滤杯</span>
+            </h3>
+            <dl>
+              <div>
+                <dt><span class="brew-icon time"></span>Time</dt>
+                <dd>3-4 min</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon water"></span>Water</dt>
+                <dd>1g : 16g</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon temp"></span>Temp</dt>
+                <dd>94°C</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon grind"></span>Grind</dt>
+                <dd>Medium Fine</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="method-card">
+            <h3>
+              <span>French Press</span
+              ><span class="method-name-cn">法压壶</span>
+            </h3>
+            <dl>
+              <div>
+                <dt><span class="brew-icon time"></span>Time</dt>
+                <dd>4 min</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon water"></span>Water</dt>
+                <dd>1g : 16g</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon temp"></span>Temp</dt>
+                <dd>90-96°C</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon grind"></span>Grind</dt>
+                <dd>Medium-Coarse</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="method-card">
+            <h3>
+              <span>AeroPress</span><span class="method-name-cn">爱乐压</span>
+            </h3>
+            <dl>
+              <div>
+                <dt><span class="brew-icon time"></span>Time</dt>
+                <dd>2 min</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon water"></span>Water</dt>
+                <dd>1g : 7g</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon temp"></span>Temp</dt>
+                <dd>96°C</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon grind"></span>Grind</dt>
+                <dd>Fine</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+
+        <div class="brew-method-group">
+          <article class="method-card">
+            <h3>
+              <span>Moka Pot</span><span class="method-name-cn">摩卡壶</span>
+            </h3>
+            <dl>
+              <div>
+                <dt><span class="brew-icon time"></span>Time</dt>
+                <dd>7 min</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon water"></span>Water</dt>
+                <dd>1g : 16g</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon temp"></span>Temp</dt>
+                <dd>99°C</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon grind"></span>Grind</dt>
+                <dd>Fine-Medium Fine</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="method-card">
+            <h3>
+              <span>Chemex</span><span class="method-name-cn">Chemex</span>
+            </h3>
+            <dl>
+              <div>
+                <dt><span class="brew-icon time"></span>Time</dt>
+                <dd>4-5 min</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon water"></span>Water</dt>
+                <dd>1g : 16g</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon temp"></span>Temp</dt>
+                <dd>96°C</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon grind"></span>Grind</dt>
+                <dd>Medium</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="method-card">
+            <h3>
+              <span>Syphon</span><span class="method-name-cn">虹吸壶</span>
+            </h3>
+            <dl>
+              <div>
+                <dt><span class="brew-icon time"></span>Time</dt>
+                <dd>6-7 min</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon water"></span>Water</dt>
+                <dd>1g : 12g</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon temp"></span>Temp</dt>
+                <dd>90°C</dd>
+              </div>
+              <div>
+                <dt><span class="brew-icon grind"></span>Grind</dt>
+                <dd>Fine</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- 页脚间距：.site-footer 的 padding 控制 -->
+    <footer class="site-footer">
+      <span>Coffetch</span>
+      <span>Espresso / Hand Brew Archive</span>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

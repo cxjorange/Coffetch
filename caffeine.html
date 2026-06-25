@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffetch | Caffeine</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="caffeine">
+    <header class="site-header">
+      <a class="brand-link" href="index.html" aria-label="Coffetch home">
+        <img src="assets/logo.png" alt="Coffetch" class="brand-logo" />
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html"><span>主页</span><strong>Home</strong></a>
+        <a href="classification.html"
+          ><span>品类</span><strong>Types</strong></a
+        >
+        <a href="caffeine.html" class="active"
+          ><span>咖啡因</span><strong>Caffeine</strong></a
+        >
+        <a href="flavor.html"><span>风味</span><strong>Flavor</strong></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="caffeine-hero-scroll">
+        <div class="page-hero compact">
+          <p class="eyebrow">Caffeine Meter</p>
+          <h1 class="hero-reveal-title">咖啡因参数</h1>
+          <p>
+            一杯咖啡的咖啡因含量由什么因素决定？<br />咖啡豆品种、粉量、容量与萃取方式会共同影响最终摄入。
+          </p>
+          <nav
+            class="hero-section-nav caffeine-hero-nav"
+            aria-label="咖啡因页面目录"
+          >
+            <a href="#caffeine-impact">影响程度</a>
+            <a href="#caffeine-filter">筛选</a>
+            <a href="#caffeine-myths">常见误区</a>
+          </nav>
+          <figure class="caffeine-hero-visual" aria-hidden="true">
+            <img src="assets/caffeine-hero-beaker.jpg" alt="" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="caffeine-lab" id="caffeine">
+        <div class="lab-dashboard" id="caffeine-impact">
+          <div class="caffeine-gauge" aria-label="Caffeine gauge">
+            <div class="gauge-arc"></div>
+            <div class="gauge-needle"></div>
+            <span>Impact</span>
+          </div>
+          <div>
+            <p class="section-kicker">Impact Scale</p>
+            <h2>咖啡因影响程度量表</h2>
+            <p>点击卡片查看咖啡因影响程度</p>
+          </div>
+          <div
+            class="impact-factor-list"
+            id="caffeineImpactList"
+            aria-label="Caffeine impact factors"
+          ></div>
+        </div>
+
+        <div class="filter-console" id="caffeine-filter">
+          <div class="section-heading small">
+            <p class="section-kicker">Filter</p>
+            <h2>按咖啡因筛选</h2>
+          </div>
+          <div class="caffeine-list" id="caffeineList" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section
+        class="caffeine-myths"
+        id="caffeine-myths"
+        aria-label="MYTHS & FACTS 咖啡因常见误区"
+      >
+        <div class="section-heading small">
+          <p class="section-kicker">MYTHS & FACTS</p>
+          <h2>咖啡因常见误区</h2>
+        </div>
+        <div class="myth-marquee" aria-label="Caffeine myth cards">
+          <div class="myth-card-track">
+            <div class="myth-card-set">
+              <article class="myth-card">
+                <span class="myth-index">01</span>
+                <p class="myth-label">MYTH</p>
+                <h3>拿铁咖啡因<br />比美式低</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  如果使用相同份数的浓缩咖啡，拿铁与美式的咖啡因可能非常接近。牛奶主要改变口感，而不是减少咖啡因。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">02</span>
+                <p class="myth-label">MYTH</p>
+                <h3>浓缩咖啡最提神</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  浓缩咖啡浓度更高，但容量较小。一大杯手冲、冷萃或滴滤咖啡的总咖啡因可能更高。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">03</span>
+                <p class="myth-label">MYTH</p>
+                <h3>奶咖比黑咖啡<br />更不容易失眠</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  是否加奶不会直接影响咖啡因含量。真正需要关注的是浓缩份数、粉量和饮用容量。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">04</span>
+                <p class="myth-label">MYTH</p>
+                <h3>深烘焙咖啡咖啡因更高</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  烘焙程度对咖啡因影响有限。浅烘焙与深烘焙的差异远没有豆种和粉量重要。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">05</span>
+                <p class="myth-label">MYTH</p>
+                <h3>苦味越重咖啡因越高</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  苦味主要来自烘焙程度与萃取状态，并不能直接反映咖啡因含量。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">06</span>
+                <p class="myth-label">MYTH</p>
+                <h3>冷萃咖啡比较温和</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  冷萃口感通常更顺滑、酸度更低，但由于长时间浸泡和较高粉量，咖啡因可能并不低。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">07</span>
+                <p class="myth-label">MYTH</p>
+                <h3>阿拉比卡和<br />罗布斯塔差不多</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  罗布斯塔的咖啡因含量通常约为阿拉比卡的两倍，是影响咖啡因的重要因素之一。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">08</span>
+                <p class="myth-label">MYTH</p>
+                <h3>小杯咖啡一定不提神</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  一小杯双份浓缩的咖啡因可能高于一大杯稀释后的奶咖，容量不等于咖啡因总量。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">09</span>
+                <p class="myth-label">MYTH</p>
+                <h3>喝咖啡后精神好代表咖啡因高</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  提神感受还会受到睡眠状态、耐受程度与饮用习惯影响，不完全由咖啡因决定。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">10</span>
+                <p class="myth-label">MYTH</p>
+                <h3>无糖咖啡比较提神</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>糖分会影响口感和能量摄入，但不会改变咖啡中的咖啡因含量。</p>
+              </article>
+            </div>
+            <div class="myth-card-set" aria-hidden="true">
+              <article class="myth-card">
+                <span class="myth-index">01</span>
+                <p class="myth-label">MYTH</p>
+                <h3>拿铁咖啡因<br />比美式低</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  如果使用相同份数的浓缩咖啡，拿铁与美式的咖啡因可能非常接近。牛奶主要改变口感，而不是减少咖啡因。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">02</span>
+                <p class="myth-label">MYTH</p>
+                <h3>浓缩咖啡最提神</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  浓缩咖啡浓度更高，但容量较小。一大杯手冲、冷萃或滴滤咖啡的总咖啡因可能更高。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">03</span>
+                <p class="myth-label">MYTH</p>
+                <h3>奶咖比黑咖啡更不容易失眠</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  是否加奶不会直接影响咖啡因含量。真正需要关注的是浓缩份数、粉量和饮用容量。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">04</span>
+                <p class="myth-label">MYTH</p>
+                <h3>深烘焙咖啡<br />咖啡因更高</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  烘焙程度对咖啡因影响有限。浅烘焙与深烘焙的差异远没有豆种和粉量重要。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">05</span>
+                <p class="myth-label">MYTH</p>
+                <h3>苦味越重咖啡因越高</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  苦味主要来自烘焙程度与萃取状态，并不能直接反映咖啡因含量。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">06</span>
+                <p class="myth-label">MYTH</p>
+                <h3>冷萃咖啡比较温和</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  冷萃口感通常更顺滑、酸度更低，但由于长时间浸泡和较高粉量，咖啡因可能并不低。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">07</span>
+                <p class="myth-label">MYTH</p>
+                <h3>阿拉比卡和<br />罗布斯塔差不多</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  罗布斯塔的咖啡因含量通常约为阿拉比卡的两倍，是影响咖啡因的重要因素之一。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">08</span>
+                <p class="myth-label">MYTH</p>
+                <h3>小杯咖啡<br />一定不提神</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  一小杯双份浓缩的咖啡因可能高于一大杯稀释后的奶咖，容量不等于咖啡因总量。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">09</span>
+                <p class="myth-label">MYTH</p>
+                <h3>喝咖啡后精神好<br />代表咖啡因高</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>
+                  提神感受还会受到睡眠状态、耐受程度与饮用习惯影响，不完全由咖啡因决定。
+                </p>
+              </article>
+              <article class="myth-card">
+                <span class="myth-index">10</span>
+                <p class="myth-label">MYTH</p>
+                <h3>无糖咖啡比较提神</h3>
+                <span class="myth-arrow" aria-hidden="true">↓</span>
+                <p class="myth-label">FACT</p>
+                <p>糖分会影响口感和能量摄入，但不会改变咖啡中的咖啡因含量。</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Coffetch</span>
+      <span>Caffeine</span>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

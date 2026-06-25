@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffetch | 找到这杯咖啡</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="home">
+    <!-- 部件间距：.site-header 的 padding 控制导航栏高度与两端缩进 -->
+    <header class="site-header">
+      <a class="brand-link" href="index.html">
+        <img src="assets/logo.png" alt="Coffetch" class="brand-logo" />
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="active"
+          ><span>主页</span><strong>Home</strong></a
+        >
+        <a href="classification.html"
+          ><span>品类</span><strong>Types</strong></a
+        >
+        <a href="caffeine.html"><span>咖啡因</span><strong>Caffeine</strong></a>
+        <a href="flavor.html"><span>风味</span><strong>Flavor</strong></a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 布局间距：.hero-shell 使用 grid-gap 控制首页内容与搜索框的间距 -->
+      <section class="hero-shell">
+        <div class="hero-content">
+          <p class="eyebrow hero-reveal-title">Fetch your coffee</p>
+          <h1 class="hero-title logo-title">
+            <img src="assets/logo.png" alt="Coffetch" />
+          </h1>
+          <div class="hero-copy"><p class="cn-title">找到这杯咖啡</p></div>
+          <p class="hero-description">
+            按品类、咖啡因、产地或风味检索，把咖啡知识整理成档案。
+          </p>
+        </div>
+
+        <figure class="hero-search-image">
+          <img src="assets/first.png" alt="" />
+        </figure>
+
+        <!-- 间距：.search-console 的 padding 控制搜索框内部呼吸感 -->
+        <section class="search-console">
+          <div class="console-top">
+            <div>
+              <p class="section-kicker">Search Console</p>
+              <h2>今天想了解哪杯？</h2>
+            </div>
+          </div>
+          <!-- 间距：.search-form 的 gap 控制输入框与按钮的距离 -->
+          <form class="search-form" id="homeSearchForm">
+            <label class="search-field">
+              <span class="search-icon"></span>
+              <input
+                id="homeSearch"
+                type="search"
+                placeholder="搜索咖啡名称、产地、风味..."
+                autocomplete="off"
+              />
+            </label>
+            <button class="primary-button" type="submit">Search</button>
+          </form>
+          <!-- 间距：.popular-row 的 gap 控制标签(chip)之间的距离 -->
+          <div class="popular-row">
+            <span>Popular Searches</span>
+            <button type="button" class="chip" data-search-chip="Flat White">
+              Flat White
+            </button>
+            <button type="button" class="chip" data-search-chip="Latte">
+              Latte
+            </button>
+            <button type="button" class="chip" data-search-chip="Mocha">
+              Mocha
+            </button>
+            <button type="button" class="chip" data-search-chip="Cold Brew">
+              Cold Brew
+            </button>
+          </div>
+          <!-- 结果间距：.search-results 的 margin-top -->
+          <div class="search-results" id="searchResults"></div>
+          <span class="watermark-word">fetch</span>
+        </section>
+      </section>
+
+      <!-- 布局间距：.question-strip 的 gap 控制三个问题卡片之间的间距 -->
+      <p class="home-question-intro">
+        <span class="home-question-intro-title"
+          >从这三个问题开始了解一杯咖啡:</span
+        >
+        <span class="home-question-intro-en"
+          >Start with these three questions:</span
+        >
+      </p>
+
+      <section class="question-strip">
+        <a class="question-card" href="classification.html">
+          <span class="question-number">01</span>
+          <span class="question-menu-label"
+            ><span>品类</span><strong>Types</strong></span
+          >
+          <h2>我喝的是什么？</h2>
+          <p>从浓缩、奶咖、冷萃到摩卡，快速理解品类差异。</p>
+        </a>
+        <a class="question-card" href="caffeine.html">
+          <span class="question-number">02</span>
+          <span class="question-menu-label"
+            ><span>咖啡因</span><strong>Caffeine</strong></span
+          >
+          <h2>会不会睡不着？</h2>
+          <p>用咖啡因指数和饮用时间，辅助日常选择。</p>
+        </a>
+        <a class="question-card" href="flavor.html">
+          <span class="question-number">03</span>
+          <span class="question-menu-label"
+            ><span>风味</span><strong>Flavor</strong></span
+          >
+          <h2>这杯来自哪里？</h2>
+          <p>浏览产地、处理法与风味关键词。</p>
+        </a>
+      </section>
+
+      <!-- 布局间距：.archive-section 的 padding-top/bottom 控制板块间的留白 -->
+      <section class="archive-section" id="archive">
+        <div class="section-heading">
+          <p class="section-kicker">Today’s Archive</p>
+          <h2>今日咖啡档案</h2>
+        </div>
+        <!-- 间距：.archive-grid 的 margin-top 控制标题与今日咖啡卡片的距离 -->
+        <div class="archive-grid">
+          <article class="feature-card" id="dailyCard">
+            <div class="card-rule"></div>
+            <p class="section-kicker">Daily cup</p>
+            <h3>Flat White</h3>
+            <!-- 间距：.fact-list div 的 margin-bottom 控制参数行间距 -->
+            <dl class="fact-list">
+              <div>
+                <dt>Caffeine Index</dt>
+                <dd>
+                  <span class="dot filled"></span
+                  ><span class="dot filled"></span
+                  ><span class="dot filled"></span><span class="dot"></span
+                  ><span class="dot"></span> Medium
+                </dd>
+              </div>
+              <div>
+                <dt>Milk Ratio</dt>
+                <dd>1:2.5</dd>
+              </div>
+              <div>
+                <dt>Flavor Profile</dt>
+                <dd>坚果 | 巧克力 | 顺滑</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+        <!-- 间距：.random-brew 的 margin-top 控制按钮与上方网格的距离 -->
+        <button class="random-brew" id="randomBrew" type="button">
+          <span class="cup-line"></span>
+          <strong>Random Brew</strong>
+          <span id="randomBrewText">抽取一杯新的咖啡档案</span>
+        </button>
+      </section>
+
+      <!-- 布局间距：.about-section 使用 padding 和 gap (flex/grid) 控制文字区块距离 -->
+      <section class="about-section" id="about">
+        <div>
+          <p class="section-kicker">About Coffetch</p>
+          <h2>Coffetch 找到这杯咖啡</h2>
+        </div>
+        <p>
+          fetch your coffee!<br />
+          Coffetch将咖啡分类、萃取方式、咖啡因与风味整理为知识档案，<br />
+          帮助每个人找到属于自己的那杯咖啡。
+        </p>
+      </section>
+    </main>
+
+    <!-- 间距：.site-footer 的 padding 和 span 之间的 margin -->
+    <footer class="site-footer">
+      <span>Coffetch</span>
+      <span>Archive / Interface / Craft</span>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

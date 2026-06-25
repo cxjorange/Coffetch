@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffetch | Flavor</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="flavor">
+    <header class="site-header">
+      <a class="brand-link" href="index.html" aria-label="Coffetch home">
+        <img src="assets/logo.png" alt="Coffetch" class="brand-logo" />
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html"><span>主页</span><strong>Home</strong></a>
+        <a href="classification.html"
+          ><span>品类</span><strong>Types</strong></a
+        >
+        <a href="caffeine.html"><span>咖啡因</span><strong>Caffeine</strong></a>
+        <a href="flavor.html" class="active"
+          ><span>风味</span><strong>Flavor</strong></a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section class="flavor-hero-scroll">
+        <div class="page-hero compact">
+          <p class="eyebrow">Origins & Flavor</p>
+          <h1 class="hero-reveal-title">咖啡风味档案</h1>
+          <p>产地、处理法、烘焙方向与风味描述共同构成咖啡的风味线索。</p>
+          <figure class="flavor-hero-visual" aria-hidden="true">
+            <img src="assets/flavor-hero1.png" alt="" />
+          </figure>
+          <nav
+            class="hero-section-nav flavor-hero-nav"
+            aria-label="风味页面目录"
+          >
+            <a href="#origins">产地探寻</a>
+            <a href="#flavor-wheel">风味轮</a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="origins-section origin-map-module" id="origins">
+        <div class="section-heading">
+          <div class="origin-title-block">
+            <p class="section-kicker">Coffee Origin Map</p>
+            <h2>咖啡豆产地探寻</h2>
+            <p class="origin-intro">
+              产地环境、海拔与处理方式都会影响咖啡风味。<br />点击地图上的产区，查看每一种味道背后的风土线索。
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="origin-map-stage"
+          aria-label="Coffee origin interactive map"
+          style="--card-x: 57%; --card-y: 58%"
+        >
+          <img
+            class="origin-world-map"
+            src="assets/origin-world-map.png"
+            alt="World coffee origin map"
+          />
+
+          <button
+            class="origin-hotspot"
+            type="button"
+            data-origin="ethiopia"
+            data-label="Ethiopia / 埃塞俄比亚"
+            style="--x: 57%; --y: 58%"
+            aria-label="Ethiopia"
+          ></button>
+          <button
+            class="origin-hotspot"
+            type="button"
+            data-origin="brazil"
+            data-label="Brazil / 巴西"
+            style="--x: 29.5%; --y: 66%"
+            aria-label="Brazil"
+          ></button>
+          <button
+            class="origin-hotspot"
+            type="button"
+            data-origin="colombia"
+            data-label="Colombia / 哥伦比亚"
+            style="--x: 23%; --y: 58%"
+            aria-label="Colombia"
+          ></button>
+          <button
+            class="origin-hotspot"
+            type="button"
+            data-origin="kenya"
+            data-label="Kenya / 肯尼亚"
+            style="--x: 58%; --y: 64%"
+            aria-label="Kenya"
+          ></button>
+          <button
+            class="origin-hotspot"
+            type="button"
+            data-origin="guatemala"
+            data-label="Guatemala / 危地马拉"
+            style="--x: 19.6%; --y: 54%"
+            aria-label="Guatemala"
+          ></button>
+          <button
+            class="origin-hotspot"
+            type="button"
+            data-origin="mexico"
+            data-label="Mexico / 墨西哥"
+            style="--x: 18.5%; --y: 49%"
+            aria-label="Mexico"
+          ></button>
+          <button
+            class="origin-hotspot"
+            type="button"
+            data-origin="india"
+            data-label="India / 印度"
+            style="--x: 68.5%; --y: 57%"
+            aria-label="India"
+          ></button>
+          <button
+            class="origin-hotspot"
+            type="button"
+            data-origin="indonesia"
+            data-label="Indonesia / 印度尼西亚"
+            style="--x: 77%; --y: 65.5%"
+            aria-label="Indonesia"
+          ></button>
+          <button
+            class="origin-hotspot"
+            type="button"
+            data-origin="yemen"
+            data-label="Yemen / 也门"
+            style="--x: 61%; --y: 57.5%"
+            aria-label="Yemen"
+          ></button>
+          <button
+            class="origin-hotspot"
+            type="button"
+            data-origin="yunnan"
+            data-label="Yunnan / 中国云南"
+            style="--x: 75%; --y: 54%"
+            aria-label="Yunnan"
+          ></button>
+
+          <article
+            class="origin-profile-card"
+            id="originProfile"
+            aria-live="polite"
+            aria-hidden="true"
+          >
+            <p class="section-kicker">Origin Archive Card</p>
+            <h3>
+              <span id="originNameEn">Ethiopia</span
+              ><small id="originNameCn">埃塞俄比亚</small>
+            </h3>
+            <dl>
+              <div>
+                <dt>代表风味</dt>
+                <dd id="originFlavors">花香、柑橘、莓果、明亮酸质</dd>
+              </div>
+              <div>
+                <dt>代表国家/地区</dt>
+                <dd id="originRegion">埃塞俄比亚</dd>
+              </div>
+            </dl>
+            <p id="originDescription">
+              埃塞俄比亚被视为咖啡原产地之一，风味表现明亮而复杂，常见花香、柑橘与莓果调性。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="origin-region-guide" aria-label="Coffee origin regions">
+        <article class="origin-region-column">
+          <p class="origin-region-kicker">AFRICA</p>
+          <h2>非洲咖啡产区</h2>
+          <p class="origin-region-subtitle">以果酸为代表的产区</p>
+          <p>
+            非洲是咖啡树的原产地之一，也是世界上重要的咖啡生产区之一。非洲产区的咖啡充满花果香、水果特征、明亮的葡萄柚与柑橘调性，也常带有香料味和迷人的莓果味，风味层次最具多样化。
+          </p>
+          <dl class="origin-region-list">
+            <div>
+              <dt>埃塞俄比亚</dt>
+              <dd>耶加雪菲、原生种</dd>
+              <dd>浓郁花香与水果调性，轻酸</dd>
+            </div>
+            <div>
+              <dt>肯尼亚</dt>
+              <dd>SL28、SL34</dd>
+              <dd>花香、柑橘、草本</dd>
+            </div>
+            <div>
+              <dt>卢旺达</dt>
+              <dd>原生罗布斯塔、帝比卡、肯特</dd>
+              <dd>水果香和果酸，带柠檬、柑橘酸香</dd>
+            </div>
+            <div>
+              <dt>乌干达</dt>
+              <dd>罗布斯塔、恩甘达、SL-28、SL-14、铁比卡、肯特</dd>
+              <dd>平衡、柔和、清新，带巧克力、奶油、香草风味</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="origin-region-column">
+          <p class="origin-region-kicker">AMERICAS</p>
+          <h2>美洲咖啡产区</h2>
+          <p class="origin-region-subtitle">以巧克力坚果醇厚度为代表</p>
+          <p>
+            拉丁美洲产区多位于美国以南，肥沃火山土、多雨湿润气候与高海拔适合咖啡栽植。这里多以水洗发酵处理，整体风味平衡，常见黑巧克力般的醇厚感、坚果、橘子、花香、焦糖甜度、香料味与莓果味。
+          </p>
+          <dl class="origin-region-list">
+            <div>
+              <dt>巴西</dt>
+              <dd>卡杜拉、卡图艾</dd>
+              <dd>酸味低，坚果味重，醇厚度佳</dd>
+            </div>
+            <div>
+              <dt>巴拿马</dt>
+              <dd>瑰夏、铁比卡、卡杜拉</dd>
+              <dd>香草、草本、柠檬草花香、甘蔗糖</dd>
+            </div>
+            <div>
+              <dt>哥伦比亚</dt>
+              <dd>卡杜拉</dd>
+              <dd>酸香和莓香，并有焦糖香气，甜感十足</dd>
+            </div>
+            <div>
+              <dt>哥斯达黎加</dt>
+              <dd>帝比卡、卡杜拉</dd>
+              <dd>柑橘、坚果味、蜂蜜、花香</dd>
+            </div>
+            <div>
+              <dt>危地马拉</dt>
+              <dd>卡杜拉、卡图艾、波旁</dd>
+              <dd>香料、烟熏、土味、鲜美、花、甜</dd>
+            </div>
+            <div>
+              <dt>洪都拉斯</dt>
+              <dd>波旁、卡杜拉、卡杜艾</dd>
+              <dd>坚果和香料</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="origin-region-column">
+          <p class="origin-region-kicker">ASIA</p>
+          <h2>亚洲咖啡产区</h2>
+          <p class="origin-region-subtitle">以草本醇厚感为代表</p>
+          <p>
+            亚洲在商业咖啡产业中占有重要地位，产量仅次于拉丁美洲，其中越南是亚洲第一咖啡生产国。亚洲种植区域横跨多种气候与地形，风味常呈现浓郁芳香、草本调性、温和香料、木质、药草与巧克力，醇厚度较高但酸质更低沉。
+          </p>
+          <dl class="origin-region-list">
+            <div>
+              <dt>中国云南</dt>
+              <dd>卡蒂姆、卡杜拉、波旁</dd>
+              <dd>巧克力，顺滑</dd>
+            </div>
+            <div>
+              <dt>印度</dt>
+              <dd>肯特、罗布斯塔</dd>
+              <dd>香料、热带水果、季风豆风味</dd>
+            </div>
+            <div>
+              <dt>印度尼西亚</dt>
+              <dd>铁皮卡、曼特宁</dd>
+              <dd>草本、檀木、巧克力风味</dd>
+            </div>
+            <div>
+              <dt>菲律宾</dt>
+              <dd>帝比卡、新世界</dd>
+              <dd>花香、水果</dd>
+            </div>
+            <div>
+              <dt>越南</dt>
+              <dd>大数罗布斯塔，阿拉比卡：卡蒂姆、沙里</dd>
+              <dd>香味和酸度较平淡，木质</dd>
+            </div>
+            <div>
+              <dt>也门</dt>
+              <dd>铁皮卡</dd>
+              <dd>热带水果、成熟果干风味，红酒般醇厚的酸质</dd>
+            </div>
+          </dl>
+        </article>
+      </section>
+
+      <section class="flavor-section" id="flavor-wheel">
+        <div class="section-heading">
+          <div class="flavor-title-block">
+            <p class="section-kicker">Coffee Flavor Wheel</p>
+            <h2>风味轮</h2>
+          </div>
+        </div>
+        <figcaption class="flavor-wheel-caption">
+          <strong
+            >咖啡风味轮是目前最广泛使用的咖啡感官分析工具之一，<br />
+
+            它将复杂的咖啡香气与味觉体验系统化整理，<br />
+            帮助人们更准确地描述和理解一杯咖啡的风味特征。</strong
+          >
+        </figcaption>
+        <figure class="flavor-wheel-panel">
+          <img
+            src="assets/flavor-wheel.png"
+            alt="Coffee Taster's Flavor Wheel"
+            class="flavor-wheel-image"
+          />
+        </figure>
+      </section>
+
+      <section class="flavor-wheel-guide" aria-label="如何使用风味轮">
+        <header class="flavor-wheel-guide-header">
+          <h2>如何使用风味轮？</h2>
+          <p>内环 中环 外环</p>
+        </header>
+
+        <div class="flavor-wheel-guide-grid">
+          <article class="flavor-wheel-guide-column">
+            <h3>内环<br />风味大类</h3>
+            <p>
+              <span class="highlight-brown"
+                >内环是咖啡风味轮的基础风味，也是最核心的部分，帮助我们快速判断一杯咖啡的整体风味方向，
+                <br />包含9种基本风味:</span
+              ><br />
+              Floral 花韵 | Fruity 水果韵 | Nutty/Cocoa 坚果/可可韵 |<br />
+              Sweet 糖韵 | Roasted 烘焙韵 | Spices 辛香韵 | <br />
+              Green/Vegetative 绿植/草本韵 | Sour/Fermented 酸质/发酵韵 | Other
+              其他<br />
+            </p>
+          </article>
+
+          <article class="flavor-wheel-guide-column">
+            <h3>中环<br />风味家族</h3>
+            <p class="highlight-brown">
+              中环帮助我们进一步缩小到具体风味范围。
+            </p>
+            <p>
+              例如:<br />
+              Fruity（水果）会被拆分为：Berry（莓果）｜Citrus（柑橘）｜Dried
+              Fruit（果干）<br />
+              Floral（花香）则可能延伸为：Jasmine（茉莉）｜Chamomile（洋甘菊）
+            </p>
+          </article>
+
+          <article class="flavor-wheel-guide-column">
+            <h3>外环<br />具体风味描述</h3>
+            <p class="highlight-brown">
+              最外层是最精确的风味表达，增强了品鉴者对咖啡味道的描述和层次。
+            </p>
+            <p>例如：</p>
+            <p>
+              Berry（莓果）继续延伸为：Blueberry（蓝莓）｜Blackberry（黑莓）｜Raspberry（覆盆子）
+            </p>
+            <p>
+              Citrus（柑橘）则可能延伸为：Lemon（柠檬）｜Orange（橙子）｜Grapefruit（葡萄柚）
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Coffetch</span>
+      <span>Origins & Flavor</span>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
